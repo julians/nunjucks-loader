@@ -1,0 +1,12 @@
+{
+  "extends": ["react-app", "prettier"],
+  "plugins": ["prettier"],
+  "globals": {
+    "__DEVELOPMENT__": true
+  },
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  }
+}
