@@ -25,13 +25,13 @@ If you have nunjucks installed, you can then install the loader.
 Using yarn:
 
 ```bash
-yarn add nunjucks-isomorphic-loader -D
+yarn add @julians/nunjucks-loader -D
 ```
 
 Using npm:
 
 ```bash
-npm install nunjucks-isomorphic-loader -D
+npm install @julians/nunjucks-loader -D
 ```
 
 ## Usage
@@ -45,7 +45,7 @@ module: {
       test: /\.(njk|nunjucks|html|tpl|tmpl)$/,
       use: [
         {
-          loader: 'nunjucks-isomorphic-loader',
+          loader: '@julians/nunjucks-loader',
           query: {
             root: [path.resolve(__dirname, 'path/to/templates/root')]
           }
@@ -59,7 +59,7 @@ plugins: [
   new HtmlWebpackPlugin({
     customData: { foo: 'bar' },
     filename: 'list.html',
-    template: 'path/to/template.njk'
+    template: 'path/to/template.nunjucks'
   })
 ]
 ```
@@ -111,7 +111,7 @@ Accessing data from the templates with the above config of `html-webpack-plugin`
 
     {% block content %}
       <section>
-        <p>I was generated with html-webpack-plugin and nunjucks-isomorphic-loader!</p>
+        <p>I was generated with html-webpack-plugin and @julians/nunjucks-loader!</p>
       </section>
     {% endblock %}
   </body>
