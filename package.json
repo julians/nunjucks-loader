@@ -1,6 +1,6 @@
 {
   "name": "@julians/nunjucks-loader",
-  "version": "1.0.2",
+  "version": "2.0.0",
   "description": "A nunjucks loader for webpack, supporting both javascript template usage and static compilation through HtmlWebpackPlugin.",
   "main": "index.js",
   "repository": {
@@ -21,14 +21,12 @@
   },
   "homepage": "https://github.com/julians/nunjucks-loader",
   "dependencies": {
-    "loader-utils": "^1.2.3",
-    "nunjucks": "^3.2.0",
-    "nunjucks-loader": "^3.0.0"
+    "loader-utils": "^2.0.0",
+    "nunjucks": ">= 2.5.0 <= 4.0.0"
   },
   "peerDependencies": {
     "nunjucks": ">= 2.5.0 <= 4.0.0"
   },
-  "devDependencies": {},
   "publishConfig": {
     "access": "public"
   }
